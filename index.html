@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#2F4634" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <script>
+      try {
+        if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark')
+      } catch (e) {}
+    </script>
+
+    <title>Rus Manto — Developer</title>
+    <meta
+      name="description"
+      content="Portofolio Rus Manto: developer, tech enthusiast, dan lifelong learner."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="%VITE_SITE_URL%/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rus Manto" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:title" content="Rus Manto — Developer" />
+    <meta
+      property="og:description"
+      content="Portofolio Rus Manto: developer, tech enthusiast, dan lifelong learner."
+    />
+    <meta property="og:url" content="%VITE_SITE_URL%/" />
+    <meta property="og:image" content="%VITE_SITE_URL%/foto.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Rus Manto — Developer" />
+    <meta
+      name="twitter:description"
+      content="Portofolio Rus Manto: developer, tech enthusiast, dan lifelong learner."
+    />
+    <meta name="twitter:image" content="%VITE_SITE_URL%/foto.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rus Manto",
+        "url": "%VITE_SITE_URL%/"
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

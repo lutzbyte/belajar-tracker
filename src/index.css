@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  /* Palet utama (berubah di mode gelap) */
+  --color-forest: #55785a;
+  --color-sage: #789477;
+  --color-mist: #a8b99b;
+  --color-sand: #e8e8d8;
+  --color-cream: #f7f5ee;
+  --color-ink: #292e29;
+
+  /* Situs publik (berubah di mode gelap) */
+  --color-page: #f7f5ee;
+  --color-panel: #e8e8d8;
+  --color-card: #fdfcf8;
+  --color-pine: #2f4634;
+
+  /* Tetap sama di kedua mode: hero, navbar, footer, sidebar */
+  --color-leaf: #789477;
+  --color-moss: #a8b99b;
+  --color-snow: #f7f5ee;
+  --color-pale: #e8e8d8;
+  --color-deep: #1f251f;
+}
+
+:root {
+  color-scheme: light;
+}
+
+/* Mode gelap: hijau tua, bukan hitam. Peran token tetap sama, hanya nilainya yang berganti. */
+.dark {
+  color-scheme: dark;
+  --color-forest: #a8b99b;
+  --color-sage: #8fa98e;
+  --color-mist: #6f836f;
+  --color-sand: #232923;
+  --color-cream: #2e362e;
+  --color-ink: #edebe1;
+  --color-page: #262c26;
+  --color-panel: #2f382f;
+  --color-card: #394339;
+  --color-pine: #273a2c;
+}
+
+body {
+  @apply bg-page font-sans text-ink antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Ikon teknologi berwarna di mode terang, satu warna terang di mode gelap */
+.dark .skill-icon {
+  filter: brightness(0) invert(0.93);
+}
+
+.dark .text-red-700 {
+  color: #fca5a5;
+}
